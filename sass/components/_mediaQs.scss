@@ -1,0 +1,182 @@
+@media (max-width: 991px) {
+    .landing {
+        .landing__content,
+        .searchResult {
+            position: relative;
+            width: 100%;
+            z-index: 99;
+        }
+    }
+    .sideBarParent {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        &.active {
+            transform: translateX(0);
+            -webkit-transform: translateX(0);
+            -moz-transform: translateX(0);
+            -ms-transform: translateX(0);
+            -o-transform: translateX(0);
+        }
+        .openDashbord {
+            display: flex;
+        }
+    }
+    .searchResult {
+        li {
+            width: 95%;
+        }
+    }
+}
+@media (min-width: 992px) {
+    .navbar {
+        form {
+            flex-basis: 60%;
+        }
+    }
+    .profile {
+        &__rate {
+            table {
+                width: 80%;
+                margin: auto;
+            }
+        }
+    }
+}
+@media (max-width: 765px) {
+    .searchResult {
+        h2 {
+            width: 100% !important;
+            padding-left: 20px;
+        }
+    }
+    /*profile*/
+    .profile {
+        width: 100%;
+        left: 0;
+        padding-bottom: 80px !important;
+
+        &__pic {
+            width: 120px;
+            height: 120px;
+            img {
+                width: 120px;
+            }
+        }
+    }
+    .sidebar.close ~ .profile {
+        width: 100%;
+        left: 0;
+    }
+    #btn {
+        display: none;
+    }
+    .sidebar {
+        height: 74px;
+        background: var(--secondaryBgColor);
+        transform: unset;
+        top: unset;
+        bottom: 0;
+        left: 50%;
+        width: 300px;
+        max-width: 100%;
+        transform: translatex(-50%);
+        -webkit-transform: translatex(-50%);
+        -moz-transform: translatex(-50%);
+        -ms-transform: translatex(-50%);
+        -o-transform: translatex(-50%);
+        display: flex;
+        justify-content: center;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        z-index: 1000;
+
+        &__menu {
+            flex-direction: row;
+            justify-content: unset;
+        }
+        &__list {
+            margin-top: unset;
+            margin-bottom: 0;
+            display: flex;
+            li:not(:first-of-type) {
+                height: fit-content;
+                width: fit-content;
+                line-height: unset;
+                display: initial;
+                margin-top: unset;
+            }
+            li {
+                height: 50px;
+
+                margin-right: 1rem;
+
+                a {
+                    span {
+                        display: none;
+                    }
+                }
+                i {
+                    width: 50px;
+                    height: 50px;
+                    line-height: unset;
+                    min-width: unset;
+                    border-radius: unset;
+                    -webkit-border-radius: unset;
+                    -moz-border-radius: unset;
+                    -ms-border-radius: unset;
+                    -o-border-radius: unset;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            form {
+                display: none !important;
+            }
+        }
+        &__bottom {
+            flex-direction: row !important;
+            a span,
+            button span {
+                display: none;
+            }
+            .profile_change-theme {
+                background-color: transparent;
+                i {
+                    width: 50px;
+                }
+                &:hover {
+                    background-color: var(--mainBgColor);
+                }
+            }
+        }
+    }
+}
+@media (min-width: 351px) and (max-width: 520px) {
+    .search {
+        h1 {
+            font-size: 35px;
+        }
+        h3 {
+            font-size: 24px;
+        }
+    }
+}
+@media (max-width: 350px) {
+    .search {
+        h1 {
+            font-size: 30px;
+        }
+        h3 {
+            font-size: 22px;
+        }
+    }
+}

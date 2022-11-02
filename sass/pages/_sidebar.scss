@@ -1,0 +1,109 @@
+.sideBarParent {
+    position: relative;
+    background-color: var(--secondaryBgColor);
+    height: calc(100vh - 56px);
+    z-index: 1111;
+    position: fixed;
+    width: 300px;
+    max-width: 100%;
+    top: 56px;
+    left: 0;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    .openDashbord {
+        display: none;
+        width: 30px;
+        height: 30px;
+        color: #fff;
+        position: fixed;
+        z-index: 101;
+        background: linear-gradient(
+            to right,
+            var(--gradient-1),
+            var(--gradient-2)
+        );
+        top: 4px;
+        right: -30px;
+
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        i {
+            color: #fff;
+        }
+    }
+    .sideBar {
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        a {
+            color: var(--mainTextColor);
+            text-transform: capitalize;
+            width: 100%;
+            text-align: left;
+            padding-left: 0.5rem;
+            transition: 0.2s all;
+            -webkit-transition: 0.2s all;
+            -moz-transition: 0.2s all;
+            -ms-transition: 0.2s all;
+            -o-transition: 0.2s all;
+            &:hover {
+                @extend %gradient-text;
+            }
+        }
+
+        .btn-toggle-nav li {
+            line-height: 3;
+        }
+        .link-dark.rounded {
+            color: var(--secondaryTextColor);
+            transition: none;
+            -webkit-transition: none;
+            -moz-transition: none;
+            -ms-transition: none;
+            -o-transition: none;
+        }
+        .link-dark.rounded:hover {
+            background: var(--light-gray);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .content {
+            transition: none;
+            -webkit-transition: none;
+            -moz-transition: none;
+            -ms-transition: none;
+            -o-transition: none;
+            &:hover {
+                background: var(--mainTextColor);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        .btn-toggle i {
+            transition: transform 0.35s ease;
+            transform-origin: 0.5em 50%;
+            -webkit-transition: transform 0.35s ease;
+            -moz-transition: transform 0.35s ease;
+            -ms-transition: transform 0.35s ease;
+            -o-transition: transform 0.35s ease;
+            background: var(--mainTextColor);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .btn-toggle[aria-expanded="true"] i {
+            @extend %gradient-text;
+            transform: rotate(90deg);
+        }
+    }
+}

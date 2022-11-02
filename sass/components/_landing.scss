@@ -1,0 +1,22 @@
+/* ========= Start landing ========= */
+.landing {
+    height: 100vh;
+
+    &__content {
+        height: 100vh;
+        width: calc(100% - 300px);
+        right: 0;
+        position: absolute;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position: bottom;
+        background: linear-gradient(0deg, var(--overlayBg), var(--overlayBg)),
+            url(../../assets/landing.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+/* ========= end landing ========= */

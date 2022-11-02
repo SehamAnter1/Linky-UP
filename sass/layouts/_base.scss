@@ -1,0 +1,118 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    background: var(--mainBgColor);
+}
+
+.form-control:focus {
+    border-color: var(--mainTextColor);
+}
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+p {
+    font-size: 15px;
+}
+
+img {
+    cursor: pointer;
+}
+ul li {
+    list-style: none;
+}
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--gradient-1);
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 1.5;
+}
+h1 {
+    font-size: 42px;
+}
+nav a,
+nav i.nav-link a {
+    color: var(--gradient-1);
+    cursor: pointer;
+}
+
+nav a:hover,
+nav i.nav-link a:hover {
+    color: var(--gradient-1);
+}
+
+.nav-item a {
+    color: var(--mainTextColor);
+    cursor: pointer;
+}
+.nav-item a:hover {
+    color: var(--mainTextColor);
+}
+.nav-link:focus,
+.nav-link:hover {
+    color: var(--mainTextColor);
+}
+.navbar-toggler-icon {
+    color: var(--mainTextColor) !important;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--mainBgColor);
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    &-thumb {
+        background: linear-gradient(
+            to bottom,
+            var(--gradient-1),
+            var(--gradient-2)
+        );
+        border-radius: 0.5rem;
+        -webkit-border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -ms-border-radius: 0.5rem;
+        -o-border-radius: 0.5rem;
+        &:horizontal {
+            background: linear-gradient(
+                to right,
+                var(--gradient-1),
+                var(--gradient-2)
+            );
+        }
+    }
+}
+%gradient-text {
+    background: linear-gradient(var(--gradient-1), var(--gradient-2));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+input:focus {
+    box-shadow: none !important;
+}
+p {
+    line-height: 1.5;
+}

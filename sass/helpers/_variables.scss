@@ -1,0 +1,30 @@
+/*Google Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+/*variables*/
+/*coolors*/
+// $mainTextColor: #66fcf1;
+
+:root {
+    --mainBgColor: #fff;
+    --secondaryBgColor: #f9f9f9;
+    --mainTextColor: #43b8fe;
+    --gradient-1: #43b8fe;
+    --gradient-2: #e684ae;
+    --secondaryTextColor: #a7a6a7;
+    --light-gray: #807878ee;
+    --overlayBg: rgb(0 0 0/50%);
+    --rate: #ebe8e8;
+    --text-color: #222;
+    --transperentMainBgColor: #ffffffa1;
+}
+.dark-theme {
+    --mainBgColor: #18191a;
+    --secondaryBgColor: #242526;
+    --mainTextColor: #fff;
+    --secondaryTextColor: #868e8d;
+    --light-gray: #ccc;
+    --overlayBg: rgb(0 0 0/80%);
+    --rate: #3c3a3a;
+    --text-color: #fff;
+    --transperentMainBgColor: #18191a4d;
+}

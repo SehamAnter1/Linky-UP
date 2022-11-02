@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Required meta tags -->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!------------>
+<!-- BOXICONS -->
+<link rel="icon" type="image/x" href="images/icon1.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+<!-------------->
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="sass/bootstrap.min.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+<!---------------->
+<!-- CSS & icons -->
+<link rel="stylesheet" href="normalize.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+<link rel="stylesheet" href="sass/style/general.css" />
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap"
+    rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="assets/logo.png">
+
+
+<!-------------->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<title>linky</title>
+</head>
+
+
+<body>
+    <nav class="nav position-sticky" id="n av">
+        <div class="container-fluid p-0 py-1 px-3 m-0">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid position-relative">
+                    <a class="navbar-brand" href="#">Linky</a>
+                </div>
+            </nav>
+        </div>
+    </nav>
+
+
+
+    <div class="container-fluid  registration">
+        <div class="row  align-self-center text-white ">
+            <!--<Login & Signup Section>-->
+            <div class="col  w-100  form-container">
+                <!-- <Carousel> -->
+                <div id="carousel"
+                    class="carousel slide vert form-position  m-auto  col-11 col-sm-8 col-md-6 col-lg-4  "
+                    data-bs-interval="false" data-bs-riding="carousel" data-bs-wrap="false">
+                    <div class="carousel-inner  form my-5">
+                        <div class="controls w-100 d-flex">
+                            <a href="#carousel" class="fs-5 col-6 py-2 text-decoration-none  Btn  text-white "
+                                role="button" data-bs-slide="next">
+                                Sign Up
+                                <a href="#carousel" class="fs-5 py-2 col-6  text-decoration-none Btn active text-white "
+                                    role="button" data-bs-slide="prev">
+                                    Sign In
+                                </a>
+                        </div>
+                        <!-- <Login> -->
+                        <div class="carousel-item active  p-3  ">
+                            <div class=" align-items-center">
+                                <div class="w-100">
+                                    <h1 class="font-weight-bolder">Welcome</h1>
+                                    <form>
+                                        <div class="form-group position-relative mt-2">
+                                            <input type="email"
+                                                class="form-control registration__input rounded-0 text-white"
+                                                id="SI-EmailInput" required
+                                                onkeyup="this.setAttribute('value', this.value);" value="">
+                                            <label for="SI-EmailInput"
+                                                class="position-absolute bottom-0 text-white-50 left-0">Your
+                                                email</label>
+                                        </div>
+                                        <div class="form-group position-relative">
+                                            <input type="password"
+                                                class="form-control registration__input rounded-0 text-white" value=""
+                                                id="SI-PasswordInput" required
+                                                onkeyup="this.setAttribute('value', this.value);" value="">
+                                            <label for="SI-PasswordInput"
+                                                class="position-absolute bottom-0 text-white-50 left-0">Password</label>
+                                        </div>
+                                        <button type="submit"
+                                            class="btn mt-3 rounded-0 border-0 w-100 btn-dark font-weight-bold p-3">Sign
+                                            In</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- </Login> -->
+                        <!-- <Signup> -->
+                        <div class="carousel-item  p-3">
+                            <div class="align-items-center">
+                                <div class="w-100">
+                                    <h1 class="font-weight-bolder ">Get Started</h1>
+                                    <form>
+                                        <div class="form-group position-relative mt-2">
+                                            <input type="text"
+                                                class="form-control  registration__input rounded-0 text-white"
+                                                id="SU-InputName" required
+                                                onkeyup="this.setAttribute('value', this.value);" value="">
+                                            <label for="SU-InputName"
+                                                class="position-absolute bottom-0 text-white-50 left-0">Your
+                                                name</label>
+                                        </div>
+                                </div>
+                                <div class="form-group position-relative">
+                                    <input type="email" class="form-control registration__input rounded-0 text-white"
+                                        id="SU-EmailInput" required onkeyup="this.setAttribute('value', this.value);"
+                                        value="">
+                                    <label for="SU-EmailInput"
+                                        class="position-absolute bottom-0 text-white-50 left-0">Your email</label>
+                                </div>
+                                <div class="form-group position-relative">
+                                    <input type="password" class="form-control registration__input rounded-0 text-white"
+                                        id="SU-InputPassword" required onkeyup="this.setAttribute('value', this.value);"
+                                        value="">
+                                    <label for="SU-InputPassword"
+                                        class="position-absolute bottom-0 text-white-50 left-0">Password</label>
+                                </div>
+                                <div class="form-group position-relative">
+                                    <input type="password" class="form-control registration__input rounded-0 text-white"
+                                        id="SU-InputCoPassword" required
+                                        onkeyup="this.setAttribute('value', this.value);" value="">
+                                    <label for="SU-InputCoPassword"
+                                        class="position-absolute bottom-0 text-white-50 left-0">Confirm Password</label>
+                                </div>
+                                <button type="submit"
+                                    class="btn rounded-0 border-0 w-100 btn-dark font-weight-bold p-3 mt-3">Sign
+                                    Up</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div> <!-- END OF CONTAINER -->
+    <script>
+        function toggleItem(elem) {
+            for (var i = 0; i < elem.length; i++) {
+                elem[i].addEventListener("click", function (e) {
+                    var current = this;
+                    for (var i = 0; i < elem.length; i++) {
+                        if (current != elem[i]) {
+                            elem[i].classList.remove('active');
+                        } else {
+                            current.classList.add('active')
+
+                        }
+                    }
+                    e.preventDefault();
+                });
+            };
+        }
+        toggleItem(document.querySelectorAll('.controls a'));
+    </script>
+    <!-- end top article -->
+
+    <!-- Optional JavaScript -->
+    <script src="js/main.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

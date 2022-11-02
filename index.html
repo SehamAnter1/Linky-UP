@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Required meta tags -->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!------------>
+<!-- BOXICONS -->
+<link rel="icon" type="image/x" href="images/icon1.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+<!-------------->
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="sass/bootstrap.min.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+<!---------------->
+<!-- CSS & icons -->
+<link rel="stylesheet" href="normalize.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+<link rel="stylesheet" href="sass/style/general.css" />
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap"
+  rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="assets/logo.png">
+
+
+<!-------------->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<title>linky</title>
+</head>
+
+<body>
+
+  <!-- start nav section -->
+
+  <nav class="navbar navbar-expand-lg position-fixed px-3">
+    <div class="container-fluid position-relative ">
+      <a class="navbar-brand" href="#">Linky</a>
+      <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon text-white"><i class="fas fa-bars"></i></span>
+      </a>
+      <div class="collapse navbar-collapse  justify-content-end" id="navbarText">
+        <form class="d-flex " role="search">
+          <input class="form-control  me-2" type="search" placeholder="Search" aria-label="Search">
+          <input class="btn btn-outline-success" type="submit" value="Search">
+        </form>
+
+        <div class="button d-flex mt-3 mt-lg-0 justify-content-between">
+          <a href="registration.html" class="btn signIn ms-lg-2">
+            sign in
+          </a>
+
+          <button class="ms-3 change-theme-button">
+            <i class=" change-theme fas fa-toggle-off"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- end nav section -->
+
+  <main class="landing position-relative">
+
+    <aside class=" ps-md-4  sideBarParent">
+      <button class="openDashbord">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <div class="sideBar pt-5 ">
+        <a href="/"
+          class=" sideBar__heading d-flex content align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+          <i class='bx bx-book-content me-2 fs-3'></i>
+          <span class="fs-5 fw-semibold">Content</span>
+        </a>
+        <ul class="list-unstyled border-bottom ps-0">
+          <li class="mb-1">
+            <a class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+              data-bs-target="#home-collapse" aria-expanded="false">
+              <i class='bx bx-chevron-right'></i> Home
+            </a>
+            <div class="collapse" id="home-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 ps-5 small">
+                <li><a href="#" class="link-dark rounded">Overview</a></li>
+                <li><a href="#" class="link-dark rounded">Updates</a></li>
+                <li><a href="#" class="link-dark rounded">Reports</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="mb-1">
+            <a class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+              data-bs-target="#dashboard-collapse" aria-expanded="false">
+              <i class='bx bx-chevron-right'></i> Dashboard
+            </a>
+            <div class="collapse" id="dashboard-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal ps-5 pb-1 small">
+                <li><a href="#" class="link-dark rounded">Overview</a></li>
+                <li><a href="#" class="link-dark rounded">Weekly</a></li>
+                <li><a href="#" class="link-dark rounded">Monthly</a></li>
+                <li><a href="#" class="link-dark rounded">Annually</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="mb-1">
+            <a class="btn btn-toggle align-items-center rounded  collapsed" data-bs-toggle="collapse"
+              data-bs-target="#orders-collapse" aria-expanded="false">
+              <i class='bx bx-chevron-right'></i> Orders
+            </a>
+            <div class="collapse" id="orders-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 ps-5 small">
+                <li><a href="#" class="link-dark rounded">New</a></li>
+                <li><a href="#" class="link-dark rounded">Processed</a></li>
+                <li><a href="#" class="link-dark rounded">Shipped</a></li>
+                <li><a href="#" class="link-dark rounded">Returned</a></li>
+              </ul>
+            </div>
+          </li>
+
+          </li>
+        </ul>
+        <a class="sideBar__heading btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+          data-bs-target="#account-collapse" aria-expanded="false">
+          <i class='bx bx-chevron-right'></i> Team
+        </a>
+        <div class="collapse" id="account-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal ps-5 pb-1 small">
+            <li><a href="#" class="link-dark rounded">...</a></li>
+            <li><a href="#" class="link-dark rounded">...</a></li>
+            <li><a href="#" class="link-dark rounded">...</a></li>
+            <li><a href="#" class="link-dark rounded">...</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </aside>
+    <div class=" col-12 landing__content">
+      <div class="search">
+        <h1>Welcome to linky!</h1>
+        <h3>Get Your Link Now..</h3>
+        <form class="d-flex mt-5 mx-auto  position-relative w-75" role="search">
+          <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+
+          <input class="btn btn-outline-success" type="submit" value="Search">
+
+        </form>
+      </div>
+    </div>
+
+  </main>
+  <!-- end landing page -->
+
+  <!-- start top article -->
+  <section class=" articleContainer col-12 col-lg-9 py-5 " id=" topArticle">
+    <div class="container">
+      <div class="row d-flex justify-content-between">
+        <h2 class="mb-5 text-center">Top Article</h2>
+        <div class="article  col-lg-12 col-12 mb-3 px-lg-4 px-3  py-4 rounded-2">
+          <h4>Article heading</h4>
+          <p class="article__description">Lorem ipsum dolor sit amet.</p>
+          <div class="article__bottom d-flex justify-content-between align-items-center">
+            <h5><span>#</span> category</h5>
+            <div class="rate  ">
+              <div class="percent" style="--num:85">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="25" cy="25" r="25"></circle>
+                  <circle cx="25" cy="25" r="25"></circle>
+                </svg>
+                <div class="number d-flex flex-column justify-content-center align-items-center">
+                  <p class="d-flex justify-content-center align-items-center"> 85 <span>%</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- end top article -->
+
+
+
+  <!-- Optional JavaScript -->
+  <script src="js/main.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

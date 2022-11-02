@@ -1,0 +1,12 @@
+.searchResult {
+    position: absolute;
+    right: 0;
+    top: 64px;
+    min-height: 100vh;
+    width: calc(100% - 300px);
+    color: var(--mainTextColor);
+    z-index: 99;
+    h2.error {
+        -webkit-text-fill-color: #eb3a4b;
+    }
+}
