@@ -8,15 +8,21 @@
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
 
-    .welcomeMessage,
-    .profile__setting {
+    &_heading {
+        figure {
+            img {
+                width: 130px;
+                border-radius: 50%;
+            }
+        }
         h2 {
             color: var(--gradient-1);
             letter-spacing: 1px;
         }
-
         p {
             color: var(--light-gray);
+            width: 500px;
+            max-width: 100%;
         }
     }
 
@@ -70,9 +76,11 @@
             background-color: var(--secondaryBgColor);
 
             thead {
-                background: linear-gradient(to right,
-                        var(--gradient-1),
-                        var(--gradient-2));
+                background: linear-gradient(
+                    to right,
+                    var(--gradient-1),
+                    var(--gradient-2)
+                );
                 color: #fff;
 
                 tr {
@@ -116,79 +124,77 @@
         }
     }
 
+    // setting
 
+    .avatar-upload {
+        position: relative;
+        max-width: 205px;
+    }
+    .picture {
+        width: fit-content;
+    }
 
-  // setting
+    .avatar-upload .avatar-edit {
+        position: absolute;
+        right: 12px;
+        z-index: 1;
+        top: 10px;
+    }
 
-  .avatar-upload {
-    position: relative;
-    max-width: 205px;
- }
- .picture{
-    width: fit-content;
- }
+    .avatar-upload .avatar-edit input {
+        display: none;
+    }
 
-.avatar-upload .avatar-edit {
-    position: absolute;
-    right: 12px;
-    z-index: 1;
-    top: 10px;
+    .avatar-upload .avatar-edit input + label {
+        display: inline-block;
+        width: 34px;
+        height: 34px;
+        margin-bottom: 0;
+        border-radius: 100%;
+        background: #ffffff;
+        border: 1px solid transparent;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+        cursor: pointer;
+        font-weight: normal;
+        transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+    }
+
+    .avatar-upload .avatar-edit input + label:hover {
+        background: #f1f1f1;
+        border-color: #d6d6d6;
+    }
+
+    .avatar-upload .avatar-edit input + label i {
+        // content: "\f304";
+        font-family: "FontAwesome";
+        color: #757575;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        margin: auto;
+    }
+
+    .avatar-upload .avatar-preview {
+        width: 192px;
+        height: 192px;
+        position: relative;
+        border-radius: 100%;
+        border: 6px solid #daf0fd;
+        box-shadow: 0px 4px 4px 0px #e9aec7d2;
+    }
 }
 
-.avatar-upload .avatar-edit input {
-    display: none;
-}
-
-.avatar-upload .avatar-edit input+label {
-    display: inline-block;
-    width: 34px;
-    height: 34px;
-    margin-bottom: 0;
-    border-radius: 100%;
-    background: #FFFFFF;
-    border: 1px solid transparent;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
-    cursor: pointer;
-    font-weight: normal;
-    transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    -o-border-radius: 100%;
-}
-
-.avatar-upload .avatar-edit input+label:hover {
-    background: #f1f1f1;
-    border-color: #d6d6d6;
-}
-
-.avatar-upload .avatar-edit input+label i {
-   // content: "\f304";
-    font-family: 'FontAwesome';
-    color: #757575;
-    position: absolute;
-    top: 10px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    margin: auto;
-}
-
-.avatar-upload .avatar-preview {
-    width: 192px;
-    height: 192px;
-    position: relative;
-    border-radius: 100%;   
-    border: 6px solid #daf0fd;
-    box-shadow: 0px 4px 4px 0px #e9aec7d2;
-}
-}
-
-.avatar-upload .avatar-preview>div {
+.avatar-upload .avatar-preview > div {
     width: 100%;
     height: 100%;
     border-radius: 100%;
@@ -197,12 +203,18 @@
     background-position: center;
 }
 
-
-.sidebar.close~.profile {
+.sidebar.close ~ .profile {
     width: calc(100% - 70px);
     left: 70px;
 }
-
+.formProfile {
+    input,
+    input:focus {
+        background-color: var(--secondaryBgColor);
+        border: none;
+        color: var(--text-color);
+    }
+}
 /* start favorite section*/
 .favorite {
     .heading {
@@ -283,28 +295,39 @@
             }
         }
     }
-
-
- 
 }
-.profile .contribution{
-    h2{ 
-
-        color:var(--gradient-1);
+.profile .contribution,
+.profile__setting {
+    h2 {
+        color: var(--gradient-1);
+        margin-bottom: 3rem;
     }
-    h5{
-        color:var(--gradient-2);
+    h5 {
+        @extend %gradient-text;
+        font-size: 22px;
     }
-    .accepted{
-        color: green;
+    .accepted {
+        color: var(--accepted);
     }
-    .rejected{
-        color: red;
+    .rejected {
+        color: var(--rejected);
     }
-    .pending{
-        color: rgb(255, 230, 0);
+    .pending {
+        color: var(--pending);
     }
-    i,.contribution__links li{
+    i,
+    .contribution__links li {
         cursor: pointer;
     }
- } 
+    .contribution__links li {
+        font-weight: 500;
+    }
+}
+.profile .contribution {
+    hr {
+        color: var(--hrColor);
+    }
+    .contribution__links{
+        margin-top:2rem;
+    }
+}

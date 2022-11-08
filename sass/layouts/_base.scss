@@ -80,6 +80,7 @@ nav i.nav-link a:hover {
     height: 0.5rem;
     border-radius: 0.5rem;
     background-color: var(--mainBgColor);
+
     -webkit-border-radius: 0.5rem;
     -moz-border-radius: 0.5rem;
     -ms-border-radius: 0.5rem;
@@ -95,13 +96,6 @@ nav i.nav-link a:hover {
         -moz-border-radius: 0.5rem;
         -ms-border-radius: 0.5rem;
         -o-border-radius: 0.5rem;
-        &:horizontal {
-            background: linear-gradient(
-                to right,
-                var(--gradient-1),
-                var(--gradient-2)
-            );
-        }
     }
 }
 %gradient-text {
@@ -110,7 +104,12 @@ nav i.nav-link a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-input:focus {
+%gradient-color {
+    background: linear-gradient(to right, var(--gradient-1), var(--gradient-2));
+}
+input:focus,
+textarea:focus,
+select:focus {
     box-shadow: none !important;
 }
 p {

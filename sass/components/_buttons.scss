@@ -1,5 +1,5 @@
 .btn-outline-success {
-    background: linear-gradient(to right, var(--gradient-1), var(--gradient-2));
+    @extend %gradient-color;
     color: #fff;
     border: none;
     outline: none;
@@ -8,6 +8,8 @@
     border: none;
     outline: none;
     background-color: transparent;
+    right: 12px;
+    top: 18px;
     i {
         color: var(--mainTextColor);
         font-size: 21px;

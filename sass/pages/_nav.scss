@@ -7,18 +7,12 @@
     -moz-transition: background 0.3s;
     -ms-transition: background 0.3s;
     -o-transition: background 0.3s;
-    .signIn {
-        color: var(--gradient-2);
-    }
-}
-.profle__nav {
-    z-index: 300;
-    width: 100%;
     position: relative;
     &::before {
         content: "";
         position: absolute;
         bottom: -2px;
+        right: 0;
         width: 100%;
         height: 2px;
         background: linear-gradient(
@@ -27,6 +21,53 @@
             var(--gradient-2)
         );
     }
+
+    &-toggler {
+        line-height: unset;
+    }
+    .signIn {
+        color: var(--gradient-2);
+    }
+    .addArticle {
+        font-weight: 400;
+        color: var(--gradient-2);
+        &:hover {
+            color: var(--gradient-2);
+        }
+    }
+    .dropdown {
+        &-toggle {
+            color: var(--gradient-2);
+            &:hover {
+                color: var(--gradient-2);
+            }
+        }
+        &-menu {
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+            -o-transition: 0.5s;
+            background-color: var(--secondaryBgColor);
+            top: 45px;
+            border: none;
+            li a {
+                color: var(--secondaryTextColor);
+                &:hover {
+                    color: var(--light-gray);
+                    background-color: transparent !important;
+                }
+            }
+        }
+        &-item {
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+.profle__nav {
+    z-index: 300;
+    width: 100%;
+    position: relative;
     .profile {
         &-information {
             .profile-img {

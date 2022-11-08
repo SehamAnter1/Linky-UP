@@ -39,7 +39,7 @@
   <nav class="navbar navbar-expand-lg position-fixed px-3">
     <div class="container-fluid position-relative ">
       <a class="navbar-brand" href="#">Linky</a>
-      <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+      <a class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon text-white"><i class="fas fa-bars"></i></span>
       </a>
@@ -48,17 +48,39 @@
           <input class="form-control  me-2" type="search" placeholder="Search" aria-label="Search">
           <input class="btn btn-outline-success" type="submit" value="Search">
         </form>
-
-        <div class="button d-flex mt-3 mt-lg-0 justify-content-between">
-          <a href="registration.html" class="btn signIn ms-lg-2">
+        <div class="button align-items-start d-flex flex-lg-row flex-column mt-3 mt-lg-0 justify-content-between">
+          <ul class="navbar-nav mx-lg-3">
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle text-capitalize" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                User Name
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item " id="openPopup" href="#">
+                    <i class="fal fa-plus me-1"></i>
+                    <span class="text-capitalize">add article</span>
+                  </a></li>
+                <li><a class="dropdown-item" href="/profile.html">
+                    <i class="fas fa-user me-1"></i>
+                    <span class="text-capitalize">Profile</span>
+                  </a></li>
+                <li><a class="dropdown-item" href="#">
+                    <i class="fas fa-sign-out-alt me-1"></i>
+                    <span>logout</span></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <a href="registration.html" class=" me-lg-4 btn signIn ">
             sign in
           </a>
 
-          <button class="ms-3 change-theme-button">
-            <i class=" change-theme fas fa-toggle-off"></i>
-          </button>
+
         </div>
       </div>
+      <button class="position-fixed change-theme-button">
+        <i class=" change-theme fas fa-toggle-off"></i>
+      </button>
     </div>
   </nav>
 
@@ -158,8 +180,17 @@
       <div class="row d-flex justify-content-between">
         <h2 class="mb-5 text-center">Top Article</h2>
         <div class="article  col-lg-12 col-12 mb-3 px-lg-4 px-3  py-4 rounded-2">
-          <h4>Article heading</h4>
-          <p class="article__description">Lorem ipsum dolor sit amet.</p>
+          <div class="row mb-4">
+            <div class="article__content col-11">
+              <h4>Article heading</h4>
+              <p class="article__description">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="article__favorite col-1 d-flex justify-content-center">
+              <a>
+                <i class="fal fa-heart addToFavorite"></i>
+              </a>
+            </div>
+          </div>
           <div class="article__bottom d-flex justify-content-between align-items-center">
             <h5><span>#</span> category</h5>
             <div class="rate  ">
@@ -178,15 +209,42 @@
 
         </div>
 
+
       </div>
     </div>
   </section>
   <!-- end top article -->
 
+  <!-- Add new Article -->
+  <section class="position-fixed newArticle">
+    <form class="position-relative newArticle-form">
+      <i class="fas fa-times close-popup"></i>
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" id="title">
+      </div>
+      <div class="form-group">
+        <label for="description">description</label>
+        <textarea class="form-control" id="description" rows="3"></textarea>
+      </div>
+      <label for="category">categroy</label>
+      <select class="form-control" id="category">categroyon>1</option>
+        <option>web</option>
 
+      </select>
+      </div>
+      <div class="newArticle-form-submit">
+
+        <button type="submit" class="btn newArticleBtn me-auto ">Submit</button>
+      </div>
+    </form>
+  </section>
+  <!-- Add new Article -->
 
   <!-- Optional JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/popup.js"></script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

@@ -122,12 +122,20 @@
         <div class="profile__container  container pt-3">
             <div class="container-fluid active  profile__user p-0 profile__content">
                 <div class="container-fluid d-flex justify-content-between mb-5 align-items-center">
-                    <!-- start welcome message -->
-                    <div class="welcomeMessage col-12 mt-3">
-                        <h2 class="text-uppercase fs-3">User Name</h2>
-                        <p>Welcome back, nice to meet you again</p>
+                    <!-- start heading message -->
+                    <div
+                        class="profile_heading col-12 mt-3 d-flex justify-content-center flex-column flex-md-row text-center text-md-start align-items-center">
+                        <figure class="col-md-2 me-3 col-12 ">
+                            <img src="./assets/avatar.png" class="img-fluid" alt="personal img">
+                        </figure>
+                        <div class="profile_heading-details  col-md-9 col-lg-7 col-12">
+                            <h2 class="text-uppercase fs-3">User Name</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus at deserunt,
+                                repudiandae cumque harum veritatis?</p>
+                        </div>
                     </div>
-                    <!-- end welcome message -->
+
+                    <!-- end heading message -->
                 </div>
 
                 <!-- ========== start Dashboard ========== -->
@@ -156,17 +164,22 @@
                                 <thead>
                                     <tr>
                                         <th class="text-capitalize" scope="col">ranking</th>
-                                        <th class="text-capitalize" scope="col">Member</th>
                                         <th class="text-capitalize" scope="col">score</th>
-                                        <th class="text-capitalize" scope="col">Handle</th>
+                                        <th class="text-capitalize" scope="col">User name</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <th style="color:var(--gradient-1)" scope="row">1</th>
-                                        <td>Mark</td>
+
                                         <td>500</td>
-                                        <td>test@gmail.com</td>
+                                        <td>Seham_Anter</td>
+                                    </tr>
+                                    <tr>
+                                        <th style="color:var(--gradient-1)" scope="row">2</th>
+
+                                        <td>200</td>
+                                        <td>Mariam_Tarek</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -210,24 +223,17 @@
             </div>
             <!-- ========== end saved page ========== -->
 
-
-
-
-
-
-
-
             <!-- ========== start  Contribution ========== -->
             <div class="container  ms-lg-3 profile__contribution  contribution    profile__content">
                 <div class="heading m-md-3 m-auto col-md-10">
                     <h2 class="text-capitalize me-auto">My Contributions</h2>
-                    <h5 class="text-center m-5">Articles you tried to add</h5>
-                    <div class="CntHeader row d-flex my-3 text-bold ">
+
+                    <div class="CntHeader row d-flex mx-0 my-3 text-bold ">
                         <h5 class="ms-auto col-6">Title</h5>
                         <h5 class="col-6 text-end">Status</h5>
-                        <hr>
                     </div>
-                    <ul class="p-0 contribution__links ">
+                    <hr>
+                    <ul class="p-0  contribution__links ">
                         <li class="accepted d-flex"><span class="ms-0 col-6" title="3/11/2022">how to be a problem
                                 solver</span> <span class="ms-auto text-end col-6"><i class="fas fa-eye mx-3"
                                     title="View"></i><span>Accepted</span></span>
@@ -296,7 +302,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="info p-3 mt-3 p-md-5 mt-md-3">
+                        <div class="info p-3 mt-3 p-md-5 mt-md-3 formProfile">
                             <div class="form-group row m-2">
                                 <div class="col-sm-9 m-auto">
                                     <input type="text" class="form-control" id="inputName" placeholder="Name" value="">
@@ -335,15 +341,6 @@
                 </form>
             </div>
             <!-- ========== end  setting ========== -->
-
-
-
-
-
-
-
-
-
         </div>
 
     </div>

@@ -16,6 +16,11 @@
     --rate: #ebe8e8;
     --text-color: #222;
     --transperentMainBgColor: #ffffffa1;
+    --borderColor: #dfdfdf;
+    --accepted: green;
+    --pending: #868682;
+    --rejected: red;
+    --hrColor: initial;
 }
 .dark-theme {
     --mainBgColor: #18191a;
@@ -27,4 +32,9 @@
     --rate: #3c3a3a;
     --text-color: #fff;
     --transperentMainBgColor: #18191a4d;
+    --borderColor: #444141;
+    --accepted: #33c633;
+    --pending: #a5a5a2;
+    --rejected: #ff6060;
+    --hrColor: #ffe5e5;
 }

@@ -24,6 +24,16 @@
         &__description {
             color: var(--light-gray);
         }
+        &__favorite {
+            i {
+                color: var(--light-gray);
+                cursor: pointer;
+                font-size: 18px;
+                &.red_heart {
+                    color: #d73125;
+                }
+            }
+        }
         &__bottom {
             > h5 {
                 @extend %gradient-text;

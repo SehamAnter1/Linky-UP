@@ -61,7 +61,7 @@
     .profile {
         width: 100%;
         left: 0;
-        padding-bottom: 80px !important;
+        padding-bottom: 90px !important;
 
         &__pic {
             width: 120px;
@@ -85,7 +85,7 @@
         top: unset;
         bottom: 0;
         left: 50%;
-        width: 300px;
+        width: 95%;
         max-width: 100%;
         transform: translatex(-50%);
         -webkit-transform: translatex(-50%);
@@ -97,7 +97,6 @@
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
         z-index: 1000;
-
         &__menu {
             flex-direction: row;
             justify-content: unset;
@@ -115,8 +114,6 @@
             }
             li {
                 height: 50px;
-
-                margin-right: 1rem;
 
                 a {
                     span {
@@ -153,11 +150,13 @@
                 i {
                     width: 50px;
                 }
-                &:hover {
-                    background-color: var(--mainBgColor);
-                }
             }
         }
+    }
+}
+@media screen and (max-width: 500px) {
+    .newArticle-form {
+        overflow-y: auto;
     }
 }
 @media (min-width: 351px) and (max-width: 520px) {
